@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(123.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .r{
+            background-image: url(r.png);
+            width: 250px;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            float: left;
+            margin-top: 400px;
+            margin-left: 40px;
+            transition: 0.2s;
+        }
+        .gate{
+            background-image: url(qapi.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width:740px;
+            height: 650px;
+            float: right;
+            margin-top: 350px;
+            margin-left: 1000px;
+            z-index: 2;
+
+        }
+        .ball{
+            background-image: url(top.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            margin-top: 750px;
+            margin-left: 230px;
+            z-index: 1;
+        }
+        .gatekeeper{
+            background-image: url(qapici.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            margin-top: 550px;
+            margin-left: 1000px;
+            z-index: 3;
+        }
+        .r:hover{
+            rotate: -30deg;
+        }
+        .r:hover~.ball{
+            left: 1200px;
+            top: 100px;
+        }
+        .r:hover~.goal{
+            scale: 4;
+
+        }
+
+        .goal{
+            scale: 0;
+            text-align: center;
+            padding-right: 300px;
+            padding-top: 100px;
+        }
+
+
+
+    </style> 
+</head>
+<body>
+    <div class="hit">
+     <div class="r"></div>
+     <div class="gate"></div>
+     <div class="ball"></div>
+     <div class="gatekeeper"></div>
+     <div class="stadium"></div>
+     <div class="goal"> GOAL!</div>
+    </div>
+    
+</body>
+</html>
